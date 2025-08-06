@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ems-consumer
+  webflux:
+    base-path: /ems-consumer
+  cloud:
+    function:
+      definition: process
+    stream:
+      bindings:
+        process-in-0:
+          destination: input-topic
+          content-type: application/json
+      kafka:
+        streams:
+          binder:
+            brokers: localhost:9092
+
+ems:
+  datasource:
+    host: localhost
+    userName: dkim
+    password: Ehdwls1127
+    database: postgres

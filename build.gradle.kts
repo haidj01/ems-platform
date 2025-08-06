@@ -4,6 +4,11 @@ plugins {
     id("io.spring.dependency-management") version "1.1.5"
 }
 
+// bootJar 태스크 비활성화
+tasks.named("bootJar") {
+    enabled = false
+}
+
 allprojects {
     group = "com.dkim.ems"
     version = "1.0.0"

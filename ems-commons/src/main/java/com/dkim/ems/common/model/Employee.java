@@ -18,7 +18,9 @@ public class Employee extends BaseModel {
     private Instant createdAt;
     private Boolean isActive;
 
-    public Employee(String id, String name, String email, Double salary, int age, Instant createdAt, Boolean isActive) {
+    public Employee(String id, String name, String email, Double salary,
+                    int age, Instant createdAt, Boolean isActive,
+                    String groupId, String eventId, Instant EventTime) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -26,5 +28,8 @@ public class Employee extends BaseModel {
         this.age = age;
         this.createdAt = createdAt;
         this.isActive = isActive;
+        this.setGroupId(groupId);
+        this.setEventId(eventId);
+        this.setEventTime(EventTime);
     }
 }

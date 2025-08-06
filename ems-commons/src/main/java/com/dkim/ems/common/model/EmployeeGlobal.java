@@ -28,6 +28,6 @@ public class EmployeeGlobal extends BaseModel{
     private Employee employee;
 
     public Employee getEmployee() {
-        return new Employee(id, name, email, salary, age, createdAt, isActive);
+        return new Employee(id, name, email, salary, age, createdAt, isActive,getGroupId(), getEventId(), getEventTime());
     }
 }

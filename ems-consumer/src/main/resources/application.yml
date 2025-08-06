@@ -22,3 +22,8 @@ ems:
     userName: dkim
     password: Ehdwls1127
     database: postgres
+
+logging:
+  level:
+    org.apache.kafka: INFO
+    org.springframework.kafka: INFO

@@ -46,7 +46,8 @@ subprojects {
     dependencyManagement {
         imports {
             mavenBom("org.springframework.boot:spring-boot-dependencies:3.5.3") // 추가
-            mavenBom("org.springframework.cloud:spring-cloud-dependencies:2023.0.3")
+            mavenBom("org.springframework.cloud:spring-cloud-dependencies:2024.0.0")
+
         }
     }
 }
